@@ -1,1 +1,1 @@
-# Gitr-challenge
+# Getir-challenge
