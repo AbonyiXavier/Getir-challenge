@@ -14,7 +14,7 @@ const url = "/api/v1";
 
 
   describe("it should make a Post Request", () => {
-    it("it should get the home page", (done) => {
+    it("HTTP POST Request", (done) => {
       chai
         .request(server)
         .post(`${url}/records`)
@@ -30,7 +30,7 @@ const url = "/api/v1";
           expect(records).to.contain.property('createdAt')
           expect(records).to.contain.property('totalCount')
           done();
-        });
+        }).timeout(10000);
     });
   // it("HTTP POST Request", async () => {
   //   const result = await chai.request(server)
