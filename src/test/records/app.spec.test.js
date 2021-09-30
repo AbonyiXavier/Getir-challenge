@@ -21,10 +21,16 @@ const url = "/api/v1";
       .send(payload)
       const status = result.status
       const { code, msg, records } = result.body
-      assert.equal(status, 200)
-      assert.equal(code, 0)
-      assert.equal(msg, 'success')
-      assert.exists(records)
-  });
+      expect(status).to.equal(200)
+      expect(code).to.equal(0)
+      expect(msg).to.equal('success')
+      expect(records).to.contain.property('key')
+      expect(records).to.contain.property('createdAt')
+      expect(records).to.contain.property('totalCount')
+      // assert.equal(status, 200)
+      // assert.equal(code, 0)
+      // assert.equal(msg, 'success')
+      // assert.exists(records)
+  }).timeout(10000);
   });
 
