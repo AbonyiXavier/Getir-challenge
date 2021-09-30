@@ -30,7 +30,7 @@ const url = "/api/v1";
           expect(records).to.contain.property('createdAt')
           expect(records).to.contain.property('totalCount')
           done();
-        }).timeout(10000);
+        })
     });
   // it("HTTP POST Request", async () => {
   //   const result = await chai.request(server)
