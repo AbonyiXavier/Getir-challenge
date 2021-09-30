@@ -33,7 +33,7 @@ You must have
 
 
 - Use the POST method
-- Use this url link here
+- Use this url https://getir-challenge-apis.herokuapp.com/api/v1/records
 
 - Test Data
 
