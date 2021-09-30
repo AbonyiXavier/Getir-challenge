@@ -10,7 +10,7 @@
     "build-babel": "babel ./src --out-dir ./build",
     "build": "npm run clean && npm run build-babel",
     "start": "npm run build && node ./build/server.js",
-    "test": " cross-env NODE_ENV=test nyc --reporter=text --reporter=html mocha --require @babel/register src/test/index.js  --timeout 1000000000 --recursive --exit   || true"
+    "test": " cross-env NODE_ENV=test nyc --reporter=text --reporter=html mocha --require @babel/register src/test/index.js --timeout 100000 --recursive --exit || true"
   },
   "author": "AbonyiXavier",
   "license": "ISC",
