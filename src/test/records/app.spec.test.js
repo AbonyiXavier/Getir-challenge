@@ -14,7 +14,7 @@ const url = "/api/v1";
 
 
   describe("it should make a Post Request", () => {
-  it("HTTP POST Request", async() => {
+  it("HTTP POST Request", async () => {
     const result = await chai.request(server)
       .post(`${url}/records`)
       .set('Accept', 'application/json')
